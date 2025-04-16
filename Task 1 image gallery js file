@@ -1,0 +1,38 @@
+const images = document.querySelectorAll(".gallery-item");
+const lightbox = document.getElementById("lightbox");
+const closeBtn = document.getElementById("Closebtn");
+const lightboxImg = document.getElementById('lightboxImg');
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+// for count my img index 
+let currentIndex = 0;
+
+images.forEach((img , index) => {
+    img.addEventListener('click', () => {
+        currentIndex = index;
+        showImage(currentIndex);
+        lightbox.style.display = 'flex';
+    });
+    console.log(currentIndex);
+});
+
+
+closeBtn.addEventListener('click', () => {
+    lightbox.style.display = "none";
+})
+
+prevBtn.addEventListener('click' , () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+});
+
+nextBtn.addEventListener('click' , () => {
+    currentIndex = (currentIndex + 1 ) % images.length;
+    showImage(currentIndex);
+})
+
+
+function showImage (index) {
+    lightboxImg.src = images[index].src; 
+}
