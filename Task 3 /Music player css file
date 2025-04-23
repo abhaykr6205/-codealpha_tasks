@@ -1,0 +1,131 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins', sans-serif;
+  
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #333;
+}
+
+.music-card {
+  background: #ffe0e5;
+  max-width: 400px;
+  padding: 25px 35px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+}
+
+.circle:hover {
+  filter: drop-shadow(2px 4px 4px #fe4da2);
+}
+
+.circle {
+  background: white;
+  padding: 8px 8px;
+  color: #ff556f;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+.circle-img {
+  margin: 35px;
+}
+
+img {
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  filter: drop-shadow(2px 2px 6px #ff556f);
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+h2 {
+  font-weight: 500;
+  color: #333;
+  font-size: 22px;
+}
+  
+p {
+  color:#70574d;
+  line-height: 30px;
+}
+
+#progress {
+  -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #f53192;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: #f53192;
+  width: 30px;
+  height: 30px;
+  border: 8px solid #fff;
+  box-shadow: 0 5px 5px rgba(255,26,26,0.22);
+  border-radius: 50%;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.controls div {
+  background: white;
+  color: #ff556f;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  margin: 20px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls div:hover {
+  filter: drop-shadow(4px 4px 4px #fe4da2);
+}
+
+.controls div:nth-child(2){
+  transform: scale(1.5);
+  background: #f53192;
+  color: #fff;
+}
+
