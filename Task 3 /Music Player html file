@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>music-player</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/62ed927427.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+  <div class="container">
+    <div class="music-card">
+      <nav>
+        <div class="circle"><i class="fa-solid fa-angle-left"></i></div>
+        <div><h1>Music Player</h1></div>
+        <div class="circle"><i class="fa-solid fa-bars"></i></div>
+      </nav>
+
+      <div class="circle-img">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.jfE3K6S6NrJ_EO3gyhJlaQHaHa&pid=Api&P=0&h=180" alt="Ed Sheeran">
+      </div>
+
+      <div>
+        <h2>Ed Sheeran</h2>
+        <p>Shape Of You (Official Music)</p>
+      </div>
+
+      <div class="audio-div">
+        <audio id="song" src="Ed Sheeran - Shape of You (Official Music Video) - Ed Sheeran (1).mp3"></audio>
+        <input type="range" value="0" id="progress">
+      </div>
+
+      <div class="controls">
+        <div><i class="fa-solid fa-backward"></i></div>
+        <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+        <div><i class="fa-solid fa-forward"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
